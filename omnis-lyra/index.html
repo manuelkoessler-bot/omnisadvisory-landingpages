@@ -53,6 +53,9 @@
 
     html { scroll-behavior: smooth; }
 
+    html, body {
+      overflow-x: hidden;
+    }
     body {
       font-family: 'Inter', sans-serif;
       background: var(--dark1);
@@ -306,6 +309,7 @@
     /* Floating Badges */
     .hero-right {
       position: relative;
+      overflow: hidden;
     }
 
     .floating-badge {
@@ -1742,6 +1746,9 @@
     }
 
     @media (max-width: 600px) {
+      .floating-badge { display: none; }
+      #hero { padding: 90px 4% 60px; gap: 32px; }
+      .hero-carousel { height: 220px; }
       .features-grid { grid-template-columns: 1fr; }
       .trust-stats { gap: 24px; }
       .beta-box { padding: 40px 24px; }
