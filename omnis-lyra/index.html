@@ -428,19 +428,50 @@
       0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,49,0.7); transform: scale(1); }
       50% { box-shadow: 0 0 0 6px rgba(255,255,49,0); transform: scale(1.07); }
     }
-    .badge-4k {
+    .slide-bottom {
       position: absolute;
-      top: 12px;
-      right: 12px;
+      bottom: 48px;
+      left: 16px;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      gap: 8px;
+      z-index: 10;
+    }
+    .slide-bottom .slide-label {
+      position: static;
+    }
+    .slide-bottom .badge-4k {
+      position: static;
+    }
+    .media-bottom {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      gap: 6px;
+      z-index: 10;
+    }
+    .media-bottom .media-tag {
+      position: static;
+    }
+    .media-bottom .badge-4k {
+      position: static;
+    }
+    .badge-4k {
       background: var(--yellow);
       color: #000;
       font-family: 'Raleway', sans-serif;
       font-weight: 900;
       font-size: 0.72rem;
       letter-spacing: 0.5px;
-      padding: 5px 10px;
+      padding: 0 13px;
       border-radius: 6px;
-      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       animation: pulse4k 1.8s ease-in-out infinite;
       pointer-events: none;
     }
@@ -1834,8 +1865,10 @@
         <div class="carousel-slide">
           <img class="slide-media" src="sannis_image.png" alt="Sannis Produktbild" loading="lazy" />
           <div class="slide-overlay"></div>
-          <div class="badge-4k">4K</div>
-          <div class="slide-label">Prompt zu Imagebild<span class="slide-label-sub">Imagebild für Webseite</span></div>
+          <div class="slide-bottom">
+            <div class="slide-label">Prompt zu Imagebild<span class="slide-label-sub">Imagebild für Webseite</span></div>
+            <div class="badge-4k">4K</div>
+          </div>
         </div>
 
         <div class="carousel-slide">
@@ -1849,8 +1882,10 @@
         <div class="carousel-slide">
           <img class="slide-media" src="samina_5.webp" alt="Samina Imagebild" loading="lazy" />
           <div class="slide-overlay"></div>
-          <div class="badge-4k">4K</div>
-          <div class="slide-label">Prompt zu Bild<span class="slide-label-sub">Visualisierung</span></div>
+          <div class="slide-bottom">
+            <div class="slide-label">Prompt zu Bild<span class="slide-label-sub">Visualisierung</span></div>
+            <div class="badge-4k">4K</div>
+          </div>
         </div>
 
         <div class="carousel-slide">
@@ -1864,8 +1899,10 @@
         <div class="carousel-slide">
           <img class="slide-media" src="sannis-hero.webp" alt="Bild für Webseite" loading="lazy" />
           <div class="slide-overlay"></div>
-          <div class="badge-4k">4K</div>
-          <div class="slide-label">Prompt zu Produktbild<span class="slide-label-sub">Bild für Webseite</span></div>
+          <div class="slide-bottom">
+            <div class="slide-label">Prompt zu Produktbild<span class="slide-label-sub">Bild für Webseite</span></div>
+            <div class="badge-4k">4K</div>
+          </div>
         </div>
 
         <div class="carousel-slide">
@@ -1879,15 +1916,19 @@
         <div class="carousel-slide">
           <img class="slide-media" src="2d-rendering.webp" alt="2D Rendering aus Zeichnung" loading="lazy" />
           <div class="slide-overlay"></div>
-          <div class="badge-4k">4K</div>
-          <div class="slide-label">Zeichnung zu 2D Rendering<span class="slide-label-sub">Visualisierung</span></div>
+          <div class="slide-bottom">
+            <div class="slide-label">Zeichnung zu 2D Rendering<span class="slide-label-sub">Visualisierung</span></div>
+            <div class="badge-4k">4K</div>
+          </div>
         </div>
 
         <div class="carousel-slide">
           <img class="slide-media" src="samina_neu.webp" alt="Samina Visualisierung" loading="lazy" />
           <div class="slide-overlay"></div>
-          <div class="badge-4k">4K</div>
-          <div class="slide-label">Prompt zu Bild<span class="slide-label-sub">Visualisierung</span></div>
+          <div class="slide-bottom">
+            <div class="slide-label">Prompt zu Bild<span class="slide-label-sub">Visualisierung</span></div>
+            <div class="badge-4k">4K</div>
+          </div>
         </div>
 
       </div>
@@ -2229,28 +2270,38 @@
   <div class="media-images">
     <div class="media-item">
       <img src="sannis_image.png" alt="Sannis Produktbild" loading="lazy" />
-      <div class="badge-4k">4K</div>
-      <span class="media-tag">Prompt zu Imagebild<span class="media-tag-sub">Imagebild für Webseite</span></span>
+      <div class="media-bottom">
+        <span class="media-tag">Prompt zu Imagebild<span class="media-tag-sub">Imagebild für Webseite</span></span>
+        <div class="badge-4k">4K</div>
+      </div>
     </div>
     <div class="media-item">
       <img src="samina_5.webp" alt="Samina Imagebild" loading="lazy" />
-      <div class="badge-4k">4K</div>
-      <span class="media-tag">Prompt zu Bild<span class="media-tag-sub">Visualisierung</span></span>
+      <div class="media-bottom">
+        <span class="media-tag">Prompt zu Bild<span class="media-tag-sub">Visualisierung</span></span>
+        <div class="badge-4k">4K</div>
+      </div>
     </div>
     <div class="media-item">
       <img src="samina_neu.webp" alt="Samina Visualisierung" loading="lazy" />
-      <div class="badge-4k">4K</div>
-      <span class="media-tag">Prompt zu Bild<span class="media-tag-sub">Visualisierung</span></span>
+      <div class="media-bottom">
+        <span class="media-tag">Prompt zu Bild<span class="media-tag-sub">Visualisierung</span></span>
+        <div class="badge-4k">4K</div>
+      </div>
     </div>
     <div class="media-item">
       <img src="sannis-hero.webp" alt="Bild für Webseite" loading="lazy" />
-      <div class="badge-4k">4K</div>
-      <span class="media-tag">Prompt zu Produktbild<span class="media-tag-sub">Bild für Webseite</span></span>
+      <div class="media-bottom">
+        <span class="media-tag">Prompt zu Produktbild<span class="media-tag-sub">Bild für Webseite</span></span>
+        <div class="badge-4k">4K</div>
+      </div>
     </div>
     <div class="media-item">
       <img src="2d-rendering.webp" alt="2D Rendering aus Zeichnung" loading="lazy" />
-      <div class="badge-4k">4K</div>
-      <span class="media-tag">Zeichnung zu 2D Rendering<span class="media-tag-sub">Visualisierung</span></span>
+      <div class="media-bottom">
+        <span class="media-tag">Zeichnung zu 2D Rendering<span class="media-tag-sub">Visualisierung</span></span>
+        <div class="badge-4k">4K</div>
+      </div>
     </div>
   </div>
 
