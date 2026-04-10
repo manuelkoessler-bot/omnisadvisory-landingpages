@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
  <!-- CCM19 Cookie Consent -->
-    <script src="https://cloud.ccm19.de/app.js?apiKey=fea7639ba0c725debb277ab75e0d7d791975b6ea502d0044&domain=69c0140af8ee58fb640bcd82" referrerpolicy="origin"></script>
+  <link rel="dns-prefetch" href="https://cloud.ccm19.de" />
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+  <link rel="dns-prefetch" href="https://consent.cookiebot.com" />
+    <script src="https://cloud.ccm19.de/app.js?apiKey=fea7639ba0c725debb277ab75e0d7d791975b6ea502d0044&domain=69c0140af8ee58fb640bcd82" referrerpolicy="origin" defer></script>
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3Q1WK5FL0"></script>
@@ -35,7 +38,8 @@
   <link rel="apple-touch-icon" href="https://framerusercontent.com/images/yeqgaC0U1I8gFr4wFYqfdypd2U.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" /></noscript>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -1855,7 +1859,7 @@
       <div class="carousel-slides" id="carouselSlides">
 
         <div class="carousel-slide active">
-          <video class="slide-media" autoplay muted loop playsinline preload="metadata">
+          <video class="slide-media" autoplay muted loop playsinline preload="metadata" poster="aktiva-poster.webp">
             <source src="AKTIVA.mp4" type="video/mp4">
           </video>
           <div class="slide-overlay"></div>
@@ -1872,7 +1876,7 @@
         </div>
 
         <div class="carousel-slide">
-          <video class="slide-media" muted loop playsinline preload="metadata" data-seek-end="5" style="object-position: center 20%;">
+          <video class="slide-media lazy-video" muted loop playsinline preload="none" data-seek-end="5" style="object-position: center 20%;">
             <source src="sannis-sm-hq.mp4" type="video/mp4">
           </video>
           <div class="slide-overlay"></div>
@@ -1886,7 +1890,7 @@
         </div>
 
         <div class="carousel-slide">
-          <video class="slide-media" muted loop playsinline preload="metadata" style="object-position: center 25%;">
+          <video class="slide-media lazy-video" muted loop playsinline preload="none" style="object-position: center 25%;">
             <source src="moha.mp4" type="video/mp4">
           </video>
           <div class="slide-overlay"></div>
@@ -1903,7 +1907,7 @@
         </div>
 
         <div class="carousel-slide">
-          <video class="slide-media" muted loop playsinline preload="metadata">
+          <video class="slide-media lazy-video" muted loop playsinline preload="none">
             <source src="immoh-hq.mp4" type="video/mp4">
           </video>
           <div class="slide-overlay"></div>
