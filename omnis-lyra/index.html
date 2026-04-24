@@ -10,19 +10,26 @@
   <link rel="dns-prefetch" href="https://consent.cookiebot.com" />
     <script src="https://cloud.ccm19.de/app.js?apiKey=fea7639ba0c725debb277ab75e0d7d791975b6ea502d0044&domain=69c0140af8ee58fb640bcd82" referrerpolicy="origin" defer></script>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3Q1WK5FL0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'denied',
-      'wait_for_update': 500
-    });
-    gtag('js', new Date());
-    gtag('config', 'G-E3Q1WK5FL0', { 'anonymize_ip': true });
-  </script>
+  <!-- Consent Default Mode (muss VOR GTM laden) -->
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('consent', 'default', {
+                  'ad_storage': 'denied',
+                  'analytics_storage': 'denied',
+                  'ad_user_data': 'denied',
+                  'ad_personalization': 'denied',
+                  'wait_for_update': 500
+          });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                                                            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                                })(window,document,'script','dataLayer','GTM-NJB8K9CC');</script>
+  <!-- End Google Tag Manager -->
   <title>Omnis LYRA: Produktion statt Diskussion | Beta</title>
   <meta name="description" content="LYRA von Omnis Advisory: Professionelle Bild- und Videoproduktion für Unternehmen. Integrierte Prompt-Intelligenz. 90+ Business-Prompts. Jetzt Demo vereinbaren." />
   <!-- Open Graph / WhatsApp / Social Preview -->
@@ -1825,7 +1832,9 @@
   </style>
 </head>
 <body>
-
+  <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJB8K9CC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 <!-- ===== HEADER ===== -->
 <header>
   <a href="https://www.omnisadvisory.ai" class="header-logo">
