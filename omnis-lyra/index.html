@@ -2660,6 +2660,15 @@
           body: JSON.stringify(payload)
         });
         if (!response.ok) throw new Error('HTTP ' + response.status);
+
+        // === Conversion Tracking: DataLayer Push für GTM ===
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          'event': 'lyra_demo_submit',
+          'form_name': 'lyra_beta_demo',
+          'form_location': 'lp_omnis_lyra'
+        });
+
         betaForm.querySelectorAll('input:not([type=hidden]), textarea, button').forEach(el => el.style.display = 'none');
         document.getElementById('betaSuccess').style.display = 'block';
       } catch(err) {
